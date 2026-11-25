@@ -1,4 +1,4 @@
-<h1 align="center">fieldcase</h1>
+<h1 align="center">Fieldcase</h1>
 
 <p align="center"><strong>Workspace rules that agents can follow across sessions.</strong></p>
 

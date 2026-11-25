@@ -1,4 +1,4 @@
-<h1 align="center">fieldcase</h1>
+<h1 align="center">Fieldcase</h1>
 
 <p align="center"><strong>给 Agent 一套可接续的工作区规则。</strong></p>
 
