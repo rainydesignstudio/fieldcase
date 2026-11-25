@@ -19,14 +19,31 @@
 
 ## Quick start <a name="quick-start"></a>
 
-1. Pick a language pack and get its ZIP and matching manifest. Compare the ZIP’s SHA-256 with the manifest, then unpack it into a separate directory.
-2. Give the agent the unpacked README, the target workspace directory, and one small thing you want to do.
+### Agent-assisted installation
+
+Copy the entire block below into an agent that can access the internet and read and write local files.
 
 ```text
-Read this pack README. The target workspace is <target directory>. I’d like a one-page note showing people where to begin.
+Help me get started with Fieldcase 0.1.0.0. Download these two files into a separate temporary directory.
+
+ZIP
+https://github.com/rainydesignstudio/fieldcase/releases/download/0.1.0.0/fieldcase-0.1.0.0-en-US-release-01.zip
+
+Verification manifest
+https://github.com/rainydesignstudio/fieldcase/releases/download/0.1.0.0/fieldcase-0.1.0.0-en-US-release-01-manifest.json
+
+Verify the ZIP against archive_sha256 in the manifest. Once the hash matches, unpack the ZIP and read its README.md. Follow the first-use guide and ask me to confirm the target workspace and my first small task.
+
+This message authorizes downloading and unpacking in the temporary directory. Writes to the target workspace require my separate authorization after I approve the plan.
 ```
 
-The agent checks the target and plan, then writes with your authorization. The host needs read and write access to the chosen local directories. If you choose Git, you need it installed locally.
+### Manual installation
+
+1. Download the ZIP and verification manifest for the same language from the [0.1.0.0 release](https://github.com/rainydesignstudio/fieldcase/releases/tag/0.1.0.0).
+2. Compare the ZIP's SHA-256 with `archive_sha256` in the manifest. Once they match, unpack the ZIP into a separate directory.
+3. Give the agent the pack README, your target workspace directory, and one small task you want to start with.
+
+Both routes require the agent to read and write the chosen local directories. The agent checks the target and plan, then writes with your authorization. If you choose Git, you need it installed locally.
 
 ## Packs <a name="packs"></a>
 

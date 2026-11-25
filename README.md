@@ -19,14 +19,31 @@
 
 ## 快速开始 <a name="quick-start"></a>
 
-1. 选择一个语言包，取得 ZIP 和对应清单。确认 ZIP 的 SHA-256 与清单一致，再解包到独立目录。
-2. 把解包后的 README、目标工作区目录和一件想先做的小事交给 Agent。
+### Agent 辅助自动安装
+
+把下面整段复制给能联网和读写本地文件的 Agent。
 
 ```text
-请读这份随包 README。目标工作区是 <目标目录>。我想先写一页工作区入口说明。
+请带我开始使用 Fieldcase · 行匣 0.1.0.0。请先在一个独立的临时目录下载这两个文件。
+
+ZIP
+https://github.com/rainydesignstudio/fieldcase/releases/download/0.1.0.0/fieldcase-0.1.0.0-zh-CN-release-01.zip
+
+校验清单
+https://github.com/rainydesignstudio/fieldcase/releases/download/0.1.0.0/fieldcase-0.1.0.0-zh-CN-release-01-manifest.json
+
+用清单中的 archive_sha256 校验 ZIP。校验通过后解包，读取包内 README.md，再按首用流程向我确认目标工作区和第一件小事。
+
+本条授权在临时目录下载和解包。写入目标工作区须在方案审定后获我另行授权。
 ```
 
-Agent 先核对目标和方案，获你授权后写入。基础使用需要宿主能读写所选本地目录。采用 Git 时需要本地 Git。
+### 手动安装
+
+1. 在 [0.1.0.0 发布页](https://github.com/rainydesignstudio/fieldcase/releases/tag/0.1.0.0) 下载同一语种的 ZIP 和校验清单。
+2. 将 ZIP 的 SHA-256 与清单中的 `archive_sha256` 比对，一致后解包到独立目录。
+3. 把包内 README、目标工作区目录和一件想先做的小事交给 Agent。
+
+两种方式都需要 Agent 能读写所选本地目录。Agent 先核对目标和方案，获你授权后写入。采用 Git 时需有本地 Git。
 
 ## 资源包 <a name="packs"></a>
 
