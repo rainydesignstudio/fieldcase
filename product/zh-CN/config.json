@@ -1,0 +1,21 @@
+{
+  "fieldcase_version": "0.1.0.0",
+  "locale": null,
+  "governance_adoption": null,
+  "index_guard": {
+    "enforce": true,
+    "restore_prompt": "ask",
+    "layers": [],
+    "targets": []
+  },
+  "consumption": {
+    "default_strategy": "shared-development"
+  },
+  "modules": {},
+  "help": {
+    "style": "standard"
+  },
+  "review": {
+    "layout": "table"
+  }
+}
